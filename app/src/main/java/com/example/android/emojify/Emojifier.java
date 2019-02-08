@@ -18,6 +18,7 @@ package com.example.android.emojify;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.util.Log;
 import android.util.SparseArray;
 import android.widget.Toast;
@@ -72,8 +73,46 @@ class Emojifier {
                 // Emoji bitmap and remove the call to whichEmoji()
                 Bitmap emojiBitmap;
 
-                // TODO (5): Create a switch statement on the result of the whichEmoji()
+                // TODO (5): Create a switch statement on the result of the whichEmoji() - Done
                 // call, and assign the proper emoji bitmap to the variable you created
+                switch (whichEmoji(face)) {
+                    case SMILE:
+                        emojiBitmap = BitmapFactory.decodeResource(context.getResources(),
+                                R.drawable.smile);
+                        break;
+                    case FROWN:
+                        emojiBitmap = BitmapFactory.decodeResource(context.getResources(),
+                                R.drawable.frown);
+                        break;
+                    case LEFT_WINK:
+                        emojiBitmap = BitmapFactory.decodeResource(context.getResources(),
+                                R.drawable.leftwink);
+                        break;
+                    case RIGHT_WINK:
+                        emojiBitmap = BitmapFactory.decodeResource(context.getResources(),
+                                R.drawable.rightwink);
+                        break;
+                    case LEFT_WINK_FROWN:
+                        emojiBitmap = BitmapFactory.decodeResource(context.getResources(),
+                                R.drawable.leftwinkfrown);
+                        break;
+                    case RIGHT_WINK_FROWN:
+                        emojiBitmap = BitmapFactory.decodeResource(context.getResources(),
+                                R.drawable.rightwinkfrown);
+                        break;
+                    case CLOSED_EYE_SMILE:
+                        emojiBitmap = BitmapFactory.decodeResource(context.getResources(),
+                                R.drawable.closed_smile);
+                        break;
+                    case CLOSED_EYE_FROWN:
+                        emojiBitmap = BitmapFactory.decodeResource(context.getResources(),
+                                R.drawable.closed_frown);
+                        break;
+                    default:
+                        emojiBitmap = null;
+                        Toast.makeText(context, R.string.no_emoji, Toast.LENGTH_SHORT).show();
+                }
+
                 // TODO (8): Call addBitmapToFace(), passing in the resultBitmap, the emojiBitmap
                 // and the Face  object, and assigning the result to resultBitmap
 
