@@ -39,9 +39,10 @@ class Emojifier {
      * @param context The application context.
      * @param picture The picture in which to detect the faces.
      */
-    static void detectFaces(Context context, Bitmap picture) {
+    static Bitmap detectFacesAndOverlayEmoji(Context context, Bitmap picture) {
 
-        // TODO (3): Change the name of the detectFaces() method to detectFacesAndOverlayEmoji() and the return type from void to Bitmap
+        // TODO (3): Change the name of the detectFaces() method to
+        // detectFacesAndOverlayEmoji() and the return type from void to Bitmap
 
         // Create the face detector, disable tracking and enable classifications
         FaceDetector detector = new FaceDetector.Builder(context)
