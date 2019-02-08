@@ -68,12 +68,14 @@ class Emojifier {
             // Iterate through the faces
             for (int i = 0; i < faces.size(); ++i) {
                 Face face = faces.valueAt(i);
-                // Get the appropriate emoji for each face
-                whichEmoji(face);
+                // TODO (4): Create a variable called emojiBitmap to hold the appropriate - Done
+                // Emoji bitmap and remove the call to whichEmoji()
+                Bitmap emojiBitmap;
 
-                // TODO (4): Create a variable called emojiBitmap to hold the appropriate Emoji bitmap and remove the call to whichEmoji()
-                // TODO (5): Create a switch statement on the result of the whichEmoji() call, and assign the proper emoji bitmap to the variable you created
-                // TODO (8): Call addBitmapToFace(), passing in the resultBitmap, the emojiBitmap and the Face  object, and assigning the result to resultBitmap
+                // TODO (5): Create a switch statement on the result of the whichEmoji()
+                // call, and assign the proper emoji bitmap to the variable you created
+                // TODO (8): Call addBitmapToFace(), passing in the resultBitmap, the emojiBitmap
+                // and the Face  object, and assigning the result to resultBitmap
 
             }
         }
