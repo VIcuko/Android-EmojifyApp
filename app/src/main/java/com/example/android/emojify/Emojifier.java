@@ -136,7 +136,8 @@ class Emojifier {
         // Log the chosen Emoji
         Log.d(LOG_TAG, "whichEmoji: " + emoji.name());
 
-        // TODO (2): Have the method return the selected Emoji type.
+        // TODO (2): Have the method return the selected Emoji type. - Done
+        return emoji;
     }
 
     // TODO (6) Create a method called addBitmapToFace() which takes the background bitmap, the Emoji bitmap, and a Face object as arguments and returns the combined bitmap with the Emoji over the face.
