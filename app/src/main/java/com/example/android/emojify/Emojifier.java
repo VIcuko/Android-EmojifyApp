@@ -87,11 +87,18 @@ class Emojifier {
         Log.d(LOG_TAG, "getClassifications: rightEyeOpenProb = "
                 + face.getIsRightEyeOpenProbability());
 
-        // TODO (3): Create threshold constants for a person smiling, and and eye being open by taking pictures of yourself and your friends and noting the logs.
-        // TODO (4): Create 3 boolean variables to track the state of the facial expression based on the thresholds you set in the previous step: smiling, left eye closed, right eye closed.
-        // TODO (5): Create an if/else system that selects the appropriate emoji based on the above booleans and log the result.
+        // TODO (3): Create threshold constants for a person smiling, and and eye being open by
+        // taking pictures of yourself and your friends and noting the logs.
+        // TODO (4): Create 3 boolean variables to track the state of the facial expression based
+        // on the thresholds you set in the previous step: smiling, left eye closed, right eye closed.
+        // TODO (5): Create an if/else system that selects the appropriate emoji based on the above
+        // booleans and log the result.
     }
 
 
-    // TODO (1): Create an enum class called Emoji that contains all the possible emoji you can make (smiling, frowning, left wink, right wink, left wink frowning, right wink frowning, closed eye smiling, close eye frowning).
+    // TODO (1): Create an enum class called Emoji that contains all the possible emoji you
+    // can make (smiling, frowning, left wink, right wink, left wink frowning, right wink
+    // frowning, closed eye smiling, close eye frowning).
+
+
 }
