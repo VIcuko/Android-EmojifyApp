@@ -95,10 +95,18 @@ class Emojifier {
         // booleans and log the result.
     }
 
-
-    // TODO (1): Create an enum class called Emoji that contains all the possible emoji you
+    // TODO (1): Create an enum class called Emoji that contains all the possible emoji you - Done
     // can make (smiling, frowning, left wink, right wink, left wink frowning, right wink
     // frowning, closed eye smiling, close eye frowning).
-
+    private enum Emoji {
+        SMILE,
+        FROWN,
+        LEFT_WINK,
+        RIGHT_WINK,
+        LEFT_WINK_FROWN,
+        RIGHT_WINK_FROWN,
+        CLOSED_EYE_SMILE,
+        CLOSED_EYE_FROWN
+    }
 
 }
