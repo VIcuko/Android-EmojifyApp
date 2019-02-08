@@ -15,6 +15,7 @@
  limitations under the License.-->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.android.emojify">
 
     <uses-feature
@@ -36,7 +37,8 @@
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths" />
+                android:resource="@xml/file_paths"
+                tools:replace="android:value"/>
         </provider>
         <activity
             android:name=".MainActivity"
