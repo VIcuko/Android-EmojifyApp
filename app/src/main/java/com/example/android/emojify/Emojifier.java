@@ -91,9 +91,9 @@ class Emojifier {
      * @param face The face for which you pick an emoji.
      */
 
-    private static void whichEmoji(Face face) {
+    private static Emoji whichEmoji(Face face) {
 
-        // TODO (1): Change the return type of the whichEmoji() method from void to Emoji.
+        // TODO (1): Change the return type of the whichEmoji() method from void to Emoji. - Done
         // Log all the probabilities
         Log.d(LOG_TAG, "whichEmoji: smilingProb = " + face.getIsSmilingProbability());
         Log.d(LOG_TAG, "whichEmoji: leftEyeOpenProb = "
